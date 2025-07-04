@@ -273,5 +273,15 @@
         ]
       }
    ]
+},
+ {
+  "id": "featured-article",
+  "fields": [
+     {
+       "component": "hero",
+       "name": "featured-article",
+       "label": "Featured Article"
+     }
+   ]
 }
 ]
