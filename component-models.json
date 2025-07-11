@@ -308,10 +308,9 @@
         "value": ""
       },
       {
-      "component": "field-group",      
+      "component": "button",      
       "name": "button",
-      "label": "CTA",
-      "fields": "@button"             
+      "label": "CTA"             
     }
     ]
   }
