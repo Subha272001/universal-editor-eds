@@ -51,7 +51,8 @@
     "columns",
     "quote",
     "featured-article",
-    "banner"
+    "banner",
+    "fragment"
    ]
 }
 ]
