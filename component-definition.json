@@ -205,7 +205,11 @@
                        "model": "banner",
                        "image": "/content/dam/image.png",
                        "imageAlt": "Helix - a shape like a corkscrew",
-                       "text": "<h1>Welcome to AEM</h1>"
+                       "title": "<h1>Welcome to AEM</h1>",
+                       "link": "https://www.adobe.com",
+                       "linkTitle": "Navigate to adobe.com",
+                       "linkText": "adobe.com",
+                       "linkType": "primary"
                   }
                }
             }
