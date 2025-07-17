@@ -306,6 +306,11 @@
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
+      },
+      {
+        "component": "button",
+        "name": "button",
+        "label": "CTA"
       }
     ]
   }
