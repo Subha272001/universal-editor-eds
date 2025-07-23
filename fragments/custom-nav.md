@@ -1,4 +1,4 @@
-## Brand
+## Brand 
 [MySite](https://mysite.com)
 
 ## Sections
