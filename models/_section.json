@@ -17,27 +17,45 @@
   ],
   "models": [
     {
-      "id": "section",
-      "fields": [
+    "id": "section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      },
+    {
+      "component": "multiselect",
+      "name": "style",
+      "value": "",
+      "label": "Style",
+      "valueType": "string",
+      "options": [
         {
-          "component": "text",
-          "name": "name",
-          "label": "Section Name",
-          "description": "The label shown for this section in the Content Tree"
+          "name": "Fade in Background",
+          "value": "fade-in"
         },
         {
-          "component": "multiselect",
-          "name": "style",
-          "label": "Style",
-          "options": [
-            {
-              "name": "Highlight",
-              "value": "highlight"
-            }
-          ]
+          "name": "Highlight",
+          "value": "highlight"
         }
       ]
+    },
+    {
+      "component": "reference",
+      "valueType": "string",
+      "name": "background",
+      "label": "Image",
+      "multi": false
+    },
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "author"
     }
+    ]
+  }
   ],
   "filters": [
     {
