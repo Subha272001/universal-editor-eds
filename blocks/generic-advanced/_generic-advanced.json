@@ -27,7 +27,7 @@
         ]
       },
       { "component": "date-time", "label": "Date & Time", "name": "date", "valueType": "date" },
-      { "component": "aem-experience-fragment", "valueType": "string", "name": "experience-fragment", "label": "Experience Fragment", "variationName": "experienceFragmentVariation", "validation": { "rootPath": "/content/refresh" } }
+      { "component": "aem-experience-fragment", "valueType": "string", "name": "experience-fragment", "label": "Experience Fragment", "variationName": "experienceFragmentVariation", "validation": { "rootPath": "/content/experience-fragments" } }
     ]
   }
   ],

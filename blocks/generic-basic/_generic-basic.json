@@ -22,7 +22,7 @@
     "fields": [
       { "component": "aem-content-fragment", "name": "offerpath", "label": "Offer Content Fragment path", "valueType": "string" },
       { "component": "aem-tag", "label": "AEM Tag Picker", "name": "cq:tags", "valueType": "string" },
-      { "component": "aem-content", "name": "reference", "label": "AEM Content Picker", "valueType": "string", "validation": { "rootPath": "/content/refresh" } },
+      { "component": "aem-content", "name": "reference", "label": "AEM Content Picker", "valueType": "string", "validation": { "rootPath": "/content" } },
       { "component": "boolean", "label": "Boolean", "name": "boolean", "valueType": "boolean" }
     ]
   }

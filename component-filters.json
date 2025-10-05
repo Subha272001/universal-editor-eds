@@ -38,26 +38,5 @@
       "button",
       "title"
     ]
-  },
-  {
-  "id": "section",
-  "components": [
-    "text",
-    "image",
-    "button",
-    "title",
-    "hero",
-    "cards",
-    "columns",
-    "quote",
-    "featured-article",
-    "banner",
-    "fragment",
-    "generic-basic",
-    "generic-advanced",
-    "generic-extra-1",
-    "generic-extra-2"
-   ]
-}
-  
+  }
 ]
