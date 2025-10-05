@@ -2,8 +2,7 @@
   "mappings": [
     "/content/universal-editor-eds/:/",
     "/content/universal-editor-eds/configuration:/.helix/config.json",
-    "/content/universal-editor-eds/metadata:/metadata.json",
-    "/content/universal-editor-eds/redirects:/redirects.json"
+    "/content/universal-editor-eds/metadata:/metadata.json"
   ],
   "includes": [
     "/content/universal-editor-eds/"
