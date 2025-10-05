@@ -1,0 +1,35 @@
+{
+  "definitions": [
+    {
+      "title": "Generic Advanced",
+      "id": "generic-advanced",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Generic Advanced",
+              "model": "generic-advanced"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+   {
+    "id": "generic-advanced",
+    "fields": [
+      { "component": "checkbox-group", "label": "Checkbox Group", "name": "checkbox", "valueType": "string[]", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
+      { "component": "container", "label": "Container", "name": "container", "valueType": "string", "collapsible": true, "fields": [
+          { "component": "text-input", "label": "Simple Text 1", "name": "text_simple1", "valueType": "string" },
+          { "component": "text-input", "label": "Simple Text 2", "name": "text_simple2", "valueType": "string" }
+        ]
+      },
+      { "component": "date-time", "label": "Date & Time", "name": "date", "valueType": "date" },
+      { "component": "aem-experience-fragment", "valueType": "string", "name": "experience-fragment", "label": "Experience Fragment", "variationName": "experienceFragmentVariation", "validation": { "rootPath": "/content/refresh" } }
+    ]
+  }
+  ],
+  "filters": []
+}
