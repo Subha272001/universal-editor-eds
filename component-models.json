@@ -2,86 +2,34 @@
   {
     "id": "page-metadata",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jcr:description",
-        "label": "Description"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "keywords",
-        "multi": true,
-        "label": "Keywords"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "nav",
-        "label": "Custom Header Fragment Path"
-      }
+      { "component": "text", "valueType": "string", "name": "jcr:title", "label": "Title" },
+      { "component": "text", "valueType": "string", "name": "jcr:description", "label": "Description" },
+      { "component": "text", "valueType": "string", "name": "keywords", "multi": true, "label": "Keywords" },
+      { "component": "text", "valueType": "string", "name": "nav", "label": "Custom Header Fragment Path" }
     ]
   },
   {
     "id": "image",
     "fields": [
-      {
-        "component": "reference",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "imageAlt",
-        "label": "Alt Text"
-      }
+      { "component": "reference", "name": "image", "label": "Image", "multi": false },
+      { "component": "text", "name": "imageAlt", "label": "Alt Text" }
     ]
   },
   {
     "id": "title",
     "fields": [
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title"
-      },
+      { "component": "text", "name": "title", "label": "Title" },
       {
         "component": "select",
         "name": "titleType",
         "label": "Title Type",
         "options": [
-          {
-            "name": "h1",
-            "value": "h1"
-          },
-          {
-            "name": "h2",
-            "value": "h2"
-          },
-          {
-            "name": "h3",
-            "value": "h3"
-          },
-          {
-            "name": "h4",
-            "value": "h4"
-          },
-          {
-            "name": "h5",
-            "value": "h5"
-          },
-          {
-            "name": "h6",
-            "value": "h6"
-          }
+          { "name": "h1", "value": "h1" },
+          { "name": "h2", "value": "h2" },
+          { "name": "h3", "value": "h3" },
+          { "name": "h4", "value": "h4" },
+          { "name": "h5", "value": "h5" },
+          { "name": "h6", "value": "h6" }
         ]
       }
     ]
@@ -89,38 +37,17 @@
   {
     "id": "button",
     "fields": [
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
+      { "component": "aem-content", "name": "link", "label": "Link" },
+      { "component": "text", "name": "linkText", "label": "Text" },
+      { "component": "text", "name": "linkTitle", "label": "Title" },
       {
         "component": "select",
         "name": "linkType",
         "label": "Type",
         "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
+          { "name": "default", "value": "" },
+          { "name": "primary", "value": "primary" },
+          { "name": "secondary", "value": "secondary" }
         ]
       }
     ]
@@ -128,269 +55,79 @@
   {
     "id": "section",
     "fields": [
-      {
-        "component": "text",
-        "name": "name",
-        "label": "Section Name",
-        "description": "The label shown for this section in the Content Tree"
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Fade in Background",
-            "value": "fade-in"
-          },
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "background",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "author"
-      }
+      { "component": "text", "name": "name", "label": "Section Name", "description": "The label shown for this section in the Content Tree" },
+      { "component": "multiselect", "name": "style", "label": "Style", "valueType": "string", "options": [{ "name": "Fade in Background", "value": "fade-in" }, { "name": "Highlight", "value": "highlight" }] },
+      { "component": "reference", "valueType": "string", "name": "background", "label": "Image", "multi": false },
+      { "component": "text", "valueType": "string", "name": "author" }
     ]
   },
   {
     "id": "card",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
+      { "component": "reference", "valueType": "string", "name": "image", "label": "Image", "multi": false },
+      { "component": "richtext", "name": "text", "value": "", "label": "Text", "valueType": "string" }
     ]
   },
   {
     "id": "columns",
     "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "columns",
-        "value": "",
-        "label": "Columns"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
+      { "component": "text", "valueType": "number", "name": "columns", "value": "", "label": "Columns" },
+      { "component": "text", "valueType": "number", "name": "rows", "value": "", "label": "Rows" }
     ]
   },
   {
     "id": "fragment",
     "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      }
+      { "component": "aem-content", "name": "reference", "label": "Reference" }
     ]
   },
   {
-    "id": "generic",
+    "id": "generic-basic",
     "fields": [
-      {
-        "component": "aem-content-fragment",
-        "name": "offerpath",
-        "value": "",
-        "label": "Offer Content Fragment path",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-tag",
-        "label": "AEM Tag Picker",
-        "name": "cq:tags",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "",
-        "label": "AEM Content Picker",
-        "valueType": "string",
-        "validation": {
-          "rootPath": "/content/refresh"
-        }
-      },
-      {
-        "component": "boolean",
-        "label": "Boolean",
-        "name": "boolean",
-        "valueType": "boolean"
-      },
-      {
-        "component": "checkbox-group",
-        "label": "Checkbox Group",
-        "name": "checkbox",
-        "valueType": "string[]",
-        "options": [
-          {
-            "name": "Option 1",
-            "value": "option1"
-          },
-          {
-            "name": "Option 2",
-            "value": "option2"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
-        "component": "date-time",
-        "label": "Date & Time",
-        "name": "date",
-        "valueType": "date"
-      },
-      {
-        "component": "aem-experience-fragment",
-        "valueType": "string",
-        "name": "experience-fragment",
-        "label": "experience-fragment",
-        "variationName": "experienceFragmentVariation",
-        "validation": {
-          "rootPath": "/content/refresh"
-        }
-      },
-      {
-        "component": "multiselect",
-        "name": "multiselect",
-        "label": "Multi Select",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Option 1",
-            "value": "option1"
-          },
-          {
-            "name": "Option 2",
-            "value": "option2"
-          }
-        ]
-      },
-      {
-        "component": "number",
-        "name": "number",
-        "label": "Number",
-        "valueType": "number",
-        "value": 0
-      },
-      {
-        "component": "radio-group",
-        "label": "Radio Group",
-        "name": "radio",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Option 1",
-            "value": "option1"
-          },
-          {
-            "name": "Option 2",
-            "value": "option2"
-          }
-        ]
-      },
-      {
-        "component": "richtext",
-        "name": "rte",
-        "label": "Rich Text",
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Tab 1",
-        "name": "tab1"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 1",
-        "name": "text1",
-        "valueType": "string"
-      },
-      {
-        "component": "tab",
-        "label": "Tab 2",
-        "name": "tab2"
-      },
-      {
-        "component": "text-input",
-        "label": "Text 2",
-        "name": "text2",
-        "valueType": "string"
-      }
+      { "component": "aem-content-fragment", "name": "offerpath", "label": "Offer Content Fragment path", "valueType": "string" },
+      { "component": "aem-tag", "label": "AEM Tag Picker", "name": "cq:tags", "valueType": "string" },
+      { "component": "aem-content", "name": "reference", "label": "AEM Content Picker", "valueType": "string", "validation": { "rootPath": "/content/refresh" } },
+      { "component": "boolean", "label": "Boolean", "name": "boolean", "valueType": "boolean" }
     ]
   },
+  {
+    "id": "generic-advanced",
+    "fields": [
+      { "component": "checkbox-group", "label": "Checkbox Group", "name": "checkbox", "valueType": "string[]", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
+      { "component": "container", "label": "Container", "name": "container", "valueType": "string", "collapsible": true, "fields": [
+          { "component": "text-input", "label": "Simple Text 1", "name": "text_simple1", "valueType": "string" },
+          { "component": "text-input", "label": "Simple Text 2", "name": "text_simple2", "valueType": "string" }
+        ]
+      },
+      { "component": "date-time", "label": "Date & Time", "name": "date", "valueType": "date" },
+      { "component": "aem-experience-fragment", "valueType": "string", "name": "experience-fragment", "label": "Experience Fragment", "variationName": "experienceFragmentVariation", "validation": { "rootPath": "/content/refresh" } }
+    ]
+  },
+  {
+  "id": "generic-extra-1",
+  "fields": [
+    { "component": "multiselect", "name": "multiselect", "label": "Multi Select", "valueType": "string", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
+    { "component": "number", "name": "number", "label": "Number", "valueType": "number", "value": 0 },
+    { "component": "radio-group", "label": "Radio Group", "name": "radio", "valueType": "string", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
+    { "component": "richtext", "name": "rte", "label": "Rich Text", "valueType": "string" }
+  ]
+},
+{
+  "id": "generic-extra-2",
+  "fields": [
+    { "component": "tab", "label": "Tab 1", "name": "tab1" },
+    { "component": "text-input", "label": "Text 1", "name": "text1_tab1", "valueType": "string" },
+    { "component": "tab", "label": "Tab 2", "name": "tab2" },
+    { "component": "text-input", "label": "Text 2", "name": "text2_tab2", "valueType": "string" }
+  ]
+}
+,
   {
     "id": "hero",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
+      { "component": "reference", "valueType": "string", "name": "image", "label": "Image", "multi": false },
+      { "component": "text", "valueType": "string", "name": "imageAlt", "label": "Alt", "value": "" },
+      { "component": "richtext", "name": "text", "value": "", "label": "Text", "valueType": "string" }
     ]
   }
 ]
