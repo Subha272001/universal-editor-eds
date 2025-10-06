@@ -21,4 +21,12 @@ module.exports = {
     'no-param-reassign': [2, { props: false }],
     'xwalk/max-cells': ['error', { max: 20 }], // <-- ADD THIS
   },
+  overrides: [
+    {
+      files: ['**/*.json'],
+      rules: {
+        'xwalk/invalid-field-name': 'off', // Disable this only for JSON
+      },
+    },
+  ],
 };
