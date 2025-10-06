@@ -30,7 +30,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "urn:adobe:aue:config:disable",
+        "name": "aue-config-disable",
         "label": "Events"
       }
     ]
