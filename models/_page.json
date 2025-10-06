@@ -27,6 +27,12 @@
           "valueType": "string",
           "name": "nav",
           "label": "Custom Header Fragment Path"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "urn:adobe:aue:config:disable",
+          "label": "Events"
         }
       ]
     }
