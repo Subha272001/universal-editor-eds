@@ -281,10 +281,16 @@ async function loadScript(src, attrs) {
  * @returns {string} The metadata value(s)
  */
 function getMetadata(name, doc = document) {
-  const attr = name && name.includes(':') ? 'property' : 'name';
+  // Force UE config tags to use "name" attribute even if they have ':'
+  let attr = 'name';
+  if (name && name.includes(':') && !name.startsWith('urn:adobe:aue:')) {
+    attr = 'property';
+  }
+
   const meta = [...doc.head.querySelectorAll(`meta[${attr}="${name}"]`)]
     .map((m) => m.content)
     .join(', ');
+
   return meta || '';
 }
 
