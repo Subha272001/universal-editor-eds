@@ -23,7 +23,49 @@
     { "component": "multiselect", "name": "multiselect", "label": "Multi Select", "valueType": "string", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
     { "component": "number", "name": "number", "label": "Number", "valueType": "number", "value": 0 },
     { "component": "radio-group", "label": "Radio Group", "name": "radio", "valueType": "string", "options": [{ "name": "Option 1", "value": "option1" }, { "name": "Option 2", "value": "option2" }] },
-    { "component": "richtext", "name": "rte", "label": "Rich Text", "valueType": "string" }
+    { 
+        "component": "richtext", 
+        "name": "rte", 
+        "rte": {
+         "toolbar": {
+    "format": ["bold", "italic", "underline", "strike"],
+    "alignment": ["left", "center", "right", "justify"],
+    "direction": ["rtl", "ltr"],
+    "indentation": ["indent", "outdent"],
+    "blocks": ["paragraph", "h1", "h2", "h3", "h4", "h5", "h6", "code_block"],
+    "list": ["bullet_list", "ordered_list"],
+    "insert": ["link", "unlink"],
+    "sr_script": ["superscript", "subscript"],
+    "editor": ["removeformat"],
+    "sections": ["format", "alignment", "list"]
+  }
+  , "actions": {
+    "bold": {
+      "tag": "strong",     
+      "shortcut": "Mod-B", 
+      "label": "Make Bold" 
+    },
+    "italic": {
+      "tag": "em",         
+      "shortcut": "Mod-I",
+      "label": "Italicize"
+    },
+    "strike": {
+      "tag": "del"         
+    },
+    "bullet_list": {
+      "wrapInParagraphs": true,    
+      "shortcut": "Mod-Shift-8",  
+      "label": "Bullet List"      
+    },
+    "ordered_list": {
+      "wrapInParagraphs": false, 
+      "shortcut": "Mod-Shift-9"
+    }
+  }
+}
+,
+     "label": "Rich Text", "valueType": "string" }
   ]
 }
   ],

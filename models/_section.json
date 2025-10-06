@@ -68,7 +68,13 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "quote",
+        "hero",
+        "generic-basic",
+        "generic-advanced",
+        "generic-extra-1",
+        "generic-extra-2"
       ]
     }
   ]
