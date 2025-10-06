@@ -3,7 +3,8 @@
     "/content/universal-editor-eds/:/",
     "/content/universal-editor-eds/configuration:/.helix/config.json",
     "/content/universal-editor-eds/metadata0:/metadata.json",
-    "/content/universal-editor-eds/redirects:/redirects.json"
+    "/content/universal-editor-eds/redirects:/redirects.json",
+    "/content/universal-editor-eds.resource/query-index.json:/query-index.json"
   ],
   "includes": [
     "/content/universal-editor-eds/"
