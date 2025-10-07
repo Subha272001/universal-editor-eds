@@ -117,7 +117,9 @@ export default async function decorate(block) {
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  if (fragment) {
+    nav.append(...fragment.childNodes);
+  }
 
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
