@@ -121,6 +121,8 @@ export default async function decorate(block) {
     nav.append(...fragment.childNodes);
   }
 
+  block.append(nav);
+
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
